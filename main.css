@@ -1,0 +1,85 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Estilos gerais */
+.about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-image h1 {
+    font-size: 32px;
+    margin-top: 10px;
+    color: #ff5733; /* Defina a cor desejada para o título */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    flex-basis: 23%;
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Responsivo */
+@media screen and (max-width: 1023px) {
+    .about-section, .products-section {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about-section, .products-section {
+        width: 100%;
+    }
+
+    .about-section {
+        display: block;
+    }
+
+    .product {
+        flex-basis: 100%;
+    }
+}
