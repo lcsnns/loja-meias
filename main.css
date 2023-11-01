@@ -24,6 +24,11 @@
     font-weight: bold; /* Define o peso da fonte como negrito */
 }
 
+h2 {
+    color: #ff5733;
+}
+
+
 .about-image {
     flex: 1;
     padding: 20px;
@@ -64,9 +69,13 @@
 }
 
 /* Responsivo */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
     .about-section, .products-section {
         width: 90%;
+    }
+    .products-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
